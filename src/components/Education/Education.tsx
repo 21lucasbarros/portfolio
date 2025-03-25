@@ -82,7 +82,7 @@ export default function Education() {
         "https://cursos.alura.com.br/user/lucasweacked21/immersion/certificate/59520",
     },
     {
-      curso: "React: escrevendo com Typescript",
+      curso: "React: escrevendo com Typescript - Alura Cursos",
       certificado:
         "https://cursos.alura.com.br/user/lucasweacked21/course/react-modernizando-escrever-typescript/certificate",
     },
