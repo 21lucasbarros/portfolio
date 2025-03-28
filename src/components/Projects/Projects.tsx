@@ -31,11 +31,11 @@ export default function Projects() {
     {
       titulo: "Cinema Database",
       descricao:
-        "Projeto web em HTML, CSS e JavaScript que permite busca dinâmica de filmes e diretores. Foco em usabilidade e experiência do usuário.",
-      imagem: "../imagem/projetos/cinema-db.png",
-      tecnologias: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/21lucasbarros/desafio-alura",
-      live: "https://21lucasbarros.github.io/desafio-alura/",
+        "Projeto em desenvolvimento que permite buscar filmes e obter informações detalhadas, como diretor, gênero, sinopse e onde assistir. Usa a API da TMDb e foca em usabilidade e experiência do usuário.",
+      imagem: "../imagem/projetos/cinema-database.png",
+      tecnologias: ["React", "TypeScript", "SCSS", "Axios", "TMDb API"],
+      github: "https://github.com/21lucasbarros/cinema-db",
+      live: "https://cinema-database.vercel.app/",
     },
     {
       titulo: "Calculadora em Java",
