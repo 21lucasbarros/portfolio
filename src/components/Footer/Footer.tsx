@@ -104,6 +104,17 @@ export default function Footer() {
                   <span>INSTAGRAM</span>
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.behance.net/21lucasbarros"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.rodape__conteudo__link}
+                >
+                  <i className="ri-behance-fill" />
+                  <span>BEHANCE</span>
+                </a>
+              </li>
             </ul>
           </section>
         </div>

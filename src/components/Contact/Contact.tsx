@@ -51,6 +51,16 @@ export default function Contact() {
                 >
                   <i className="ri-instagram-line" />
                 </a>
+                <a
+                  href="https://www.behance.net/21lucasbarros"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={
+                    style.contato__conteudo__contato__info__social_link
+                  }
+                >
+                  <i className="ri-behance-fill" />
+                </a>
               </div>
             </div>
 
