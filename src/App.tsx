@@ -4,7 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
-import Stacks from "./components/Stacks/Stacks";
+import Stacks from "./components/StacksInfo/Stacks";
 
 export default function App() {
   return (
