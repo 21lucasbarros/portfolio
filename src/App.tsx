@@ -1,10 +1,10 @@
-import Contact from "./components/Contact/contact";
-import Education from "./components/Education/education";
-import Footer from "./components/Footer/footer";
-import Header from "./components/Header/header";
-import Home from "./components/Home/home";
-import Projects from "./components/Projects/projects";
-import Stacks from "./components/Stacks/stacks";
+import Contact from "./components/Contact/Contact";
+import Education from "./components/Education/Education";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import Projects from "./components/Projects/Projects";
+import Stacks from "./components/Stacks/Stacks";
 
 export default function App() {
   return (
