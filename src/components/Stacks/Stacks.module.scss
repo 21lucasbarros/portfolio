@@ -23,14 +23,9 @@
       gap: 1.5rem;
 
       &__categoria {
-        background-color: #1e1e1e;
+        // background-color: #ff0000;
         padding: 1.5rem;
         border-radius: 0.5rem;
-        transition: transform 0.2s ease;
-
-        &:hover {
-          transform: translateY(-2px);
-        }
 
         &__header {
           display: flex;
