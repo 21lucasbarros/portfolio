@@ -177,7 +177,7 @@ export default function Stacks() {
                                 tech.proficiency
                               ),
                             }}
-                          ></div>
+                          />
                         </div>
                       </div>
                     ))}
