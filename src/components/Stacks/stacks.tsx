@@ -1,4 +1,4 @@
-import style from "./stacks.module.scss";
+import style from "./Stacks.module.scss";
 
 const techStacks = [
   {
