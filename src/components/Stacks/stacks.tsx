@@ -11,13 +11,13 @@ const techStacks = [
     name: "HTML",
     category: "front-end",
     icon: "ri-html5-fill",
-    proficiency: 70,
+    proficiency: 75,
   },
   {
     name: "CSS",
     category: "front-end",
     icon: "ri-css3-fill",
-    proficiency: 68,
+    proficiency: 71,
   },
   {
     name: "JavaScript",
@@ -47,7 +47,7 @@ const techStacks = [
     name: "Next.js",
     category: "front-end",
     icon: "ri-nextjs-fill",
-    proficiency: 25,
+    proficiency: 32,
   },
   {
     name: "C#",
@@ -59,7 +59,7 @@ const techStacks = [
     name: "Java",
     category: "back-end",
     icon: "ri-java-fill",
-    proficiency: 25,
+    proficiency: 28,
   },
 
   {
@@ -72,13 +72,13 @@ const techStacks = [
     name: "GitHub",
     category: "ferramentas",
     icon: "ri-github-fill",
-    proficiency: 50,
+    proficiency: 47,
   },
   {
     name: "Canva",
     category: "ferramentas",
     icon: "ri-palette-fill",
-    proficiency: 70,
+    proficiency: 78,
   },
   {
     name: "Photoshop",
@@ -90,7 +90,7 @@ const techStacks = [
     name: "Figma",
     category: "ferramentas",
     icon: "ri-figma-fill",
-    proficiency: 40,
+    proficiency: 41,
   },
 ];
 
