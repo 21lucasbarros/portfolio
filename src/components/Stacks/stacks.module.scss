@@ -1,0 +1,141 @@
+.stacks {
+  padding: 4rem 2rem;
+  background-color: #161616;
+
+  &__conteudo {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    &__titulo {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      font-family: monospace;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    &__grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      &__categoria {
+        background-color: #1e1e1e;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: translateY(-2px);
+        }
+
+        &__header {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          margin-bottom: 1rem;
+          color: #ffffff;
+
+          & i {
+            font-size: 1.25rem;
+          }
+
+          &__titulo {
+            font-family: monospace;
+            font-size: 1.1rem;
+            font-weight: 600;
+          }
+        }
+      }
+      &__tech_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+
+        &__item {
+          background-color: #2a2a2a;
+          color: #ffffff;
+          padding: 0.5rem 0.75rem;
+          border-radius: 0.375rem;
+          font-size: 1rem;
+          font-family: monospace;
+          transition: all 0.2s ease;
+          cursor: default;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          min-width: 180px;
+          position: relative;
+
+          &:hover {
+            background-color: #3a3a3a;
+            transform: translateY(-1px);
+          }
+
+          &__info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            & i {
+              font-size: 1.2rem;
+              color: #ffffff;
+            }
+
+            &__titulo {
+              color: #ffffff;
+            }
+          }
+
+          &__nivel {
+            font-weight: 600;
+            font-size: 0.9rem;
+
+            &__barra {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background-color: #161616;
+              overflow: hidden;
+
+              &__fill {
+                height: 100%;
+                transition: width 0.3s ease, background-color 0.3s ease;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .stacks {
+    padding: 1.5rem 1rem;
+
+    &__conteudo {
+      &__titulo {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &__grid {
+        &__categoria {
+          padding: 1rem;
+
+          &__tech_list {
+            &__item {
+              min-width: calc(50% - 0.375rem);
+            }
+          }
+        }
+      }
+    }
+  }
+}

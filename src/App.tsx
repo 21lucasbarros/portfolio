@@ -1,9 +1,10 @@
-import Contact from "./components/Contact/Contact";
-import Education from "./components/Education/Education";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import Home from "./components/Home/Home";
-import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/contact";
+import Education from "./components/Education/education";
+import Footer from "./components/Footer/footer";
+import Header from "./components/Header/header";
+import Home from "./components/Home/home";
+import Projects from "./components/Projects/projects";
+import Stacks from "./components/Stacks/stacks";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <main>
           <Home />
           <Education />
+          <Stacks />
           <Projects />
           <Contact />
         </main>
