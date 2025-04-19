@@ -38,6 +38,22 @@ export default function Projects() {
       live: "https://cinema-database.vercel.app/",
     },
     {
+      titulo: "My To-Do List",
+      descricao:
+        "Aplicação web full stack desenvolvida em um desafio acadêmico, com uma To-Do List funcional. O front-end usa Angular e CSS, com foco em responsividade. O back-end foi feito em JavaScript com Express.js, Mongoose e MongoDB, permitindo criar, editar e excluir tarefas.",
+      imagem: "../../imagem/projetos/my-to-do-list.png",
+      tecnologias: [
+        "Angular",
+        "CSS",
+        "JavaScript",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+      ],
+      github: "https://github.com/21lucasbarros/front-end-todo-app",
+      live: "https://front-end-todo-app-three.vercel.app/",
+    },
+    {
       titulo: "Calculadora em Java",
       descricao:
         "Calculadora desenvolvida em Java com interface Swing, realizando operações básicas e avançadas. A aplicação segue boas práticas de programação orientada a objetos.",
