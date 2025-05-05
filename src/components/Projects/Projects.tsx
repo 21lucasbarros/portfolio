@@ -45,6 +45,7 @@ export default function Projects() {
       tecnologias: [
         "Angular",
         "CSS",
+        "TypeScript",
         "JavaScript",
         "Express.js",
         "MongoDB",
