@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-// Define the form schema using Zod
 const contactSchema = z.object({
   name: z.string().min(1, "NOME É OBRIGATÓRIO"),
   email: z.string().email("POR FAVOR, INSIRA UM EMAIL VÁLIDO"),
