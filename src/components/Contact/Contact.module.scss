@@ -1,119 +1,139 @@
 .contato {
-    padding: 5rem 2rem;
-    background-color: #161616;
+  padding: 5rem 2rem;
+  background-color: #161616;
 }
 
 .contato__conteudo {
-    max-width: 1400px;
-    margin: 0 auto;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .contato__conteudo__titulo {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    font-family: var(--fontMono);
-    color: var(--corBranco);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: var(--fontMono);
+  color: var(--corBranco);
 }
 
 .contato__conteudo__descricao {
-    font-family: var(--fontMono);
-    font-size: 1rem;
-    color: var(--corBranco);
-    margin-bottom: 4rem;
-    opacity: 0.7;
+  font-family: var(--fontMono);
+  font-size: 1rem;
+  color: var(--corBranco);
+  margin-bottom: 4rem;
+  opacity: 0.7;
 }
 
 .contato__conteudo__contato {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
 }
 
 .contato__conteudo__contato__info {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .contato__conteudo__contato__info__email {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-family: var(--fontMono);
-    text-decoration: none;
-    color: var(--corBranco);
-    transition: opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--fontMono);
+  text-decoration: none;
+  color: var(--corBranco);
+  transition: opacity 0.2s ease;
 }
 
 .contato__conteudo__contato__info__email:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .contato__conteudo__contato__info__social {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .contato__conteudo__contato__info__social_link {
-    color: var(--corBranco);
-    text-decoration: none;
-    transition: opacity 0.2s ease;
+  color: var(--corBranco);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
 }
 
 .contato__conteudo__contato__info__social_link:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .contato__conteudo__form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .contato__conteudo__form_form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contato__conteudo__form_form__input,
 .contato__conteudo__form_form__textarea {
-    font-family: var(--fontMono);
-    padding: 1rem;
-    background: white;
-    border: 1px solid #ddd;
-    font-size: 0.875rem;
-    transition: border-color 0.2s ease;
+  font-family: var(--fontMono);
+  padding: 1rem;
+  background: white;
+  border: 1px solid #ddd;
+  font-size: 0.875rem;
+  transition: border-color 0.2s ease;
 }
 
 .contato__conteudo__form_form__input:focus,
 .contato__conteudo__form_form__textarea:focus {
-    outline: none;
-    border-color: #0052cc;
+  outline: none;
+  border-color: #0052cc;
 }
 
 .contato__conteudo__form_form__textarea {
-    min-height: 150px;
-    resize: vertical;
+  min-height: 150px;
+  resize: vertical;
 }
 
 .contato__conteudo__form_form__botao {
-    font-family: var(--fontMono);
-    padding: 1rem 2rem;
-    background: #3D3D3D;
-    color: var(--corBranco);
-    border: none;
-    cursor: pointer;
-    transition: opacity 0.2s ease;
-    font-size: 0.875rem;
+  font-family: var(--fontMono);
+  padding: 1rem 2rem;
+  background: #3d3d3d;
+  color: var(--corBranco);
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  font-size: 0.875rem;
 }
 
 .contato__conteudo__form_form__botao:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 @media (max-width: 768px) {
-    .contato__conteudo__contato {
-        grid-template-columns: 1fr;
-    }
+  .contato__conteudo__contato {
+    grid-template-columns: 1fr;
+  }
+}
+
+.error {
+  border: 1px solid red !important;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  display: block;
+  font-family: var(--fontMono);
+}
+
+.successMessage {
+  color: rgb(15, 187, 15);
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--fontMono);
 }
