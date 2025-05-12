@@ -9,7 +9,7 @@ export default function Home() {
             <h1 className={style.home__conteudo__principal__titulo}>
               DESENVOLVEDOR
               <br />
-              FRONT-END
+              FULL-STACK
               <span className={style.home__conteudo__principal__trademark}>
                 ™
               </span>

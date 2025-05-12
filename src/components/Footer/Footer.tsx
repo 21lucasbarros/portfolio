@@ -21,7 +21,7 @@ export default function Footer() {
           <section className={styles.rodape__conteudo__brand}>
             <i className="ri-code-s-slash-fill" />
             <p className={styles.rodape__conteudo__descricao}>
-              Desenvolvedor Front-End focado em criar experiências digitais
+              Desenvolvedor Full-Stack focado em criar experiências digitais
               únicas e funcionais
             </p>
           </section>
