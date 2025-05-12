@@ -21,6 +21,14 @@ export default function Home() {
               ARTE, CINEMA, MÚSICA E ESPORTES, INSPIRADO POR FIGURAS COMO STEVE
               JOBS E MICHAEL JORDAN.
             </p>
+            <a
+              href="/docs/curriculo.pdf"
+              download
+              className={style.home__conteudo__principal__button}
+            >
+              <i className="ri-download-2-fill" />
+              BAIXAR CURRÍCULO
+            </a>
           </div>
           <div className={style.home__conteudo__rodape}>
             <div className={style.home__conteudo__rodape__scroll}>
