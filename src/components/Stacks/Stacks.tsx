@@ -1,192 +1,112 @@
 import style from "./Stacks.module.scss";
 
 const techStacks = [
+  // Front-end
+  { name: "React", category: "front-end", icon: "ri-reactjs-line" },
+  { name: "Next.js", category: "front-end", icon: "ri-nextjs-fill" },
+  { name: "Angular", category: "front-end", icon: "ri-angularjs-fill" },
+  { name: "HTML", category: "front-end", icon: "ri-html5-fill" },
+  { name: "CSS", category: "front-end", icon: "ri-css3-fill" },
+  { name: "SCSS", category: "front-end", icon: "ri-braces-fill" },
+  { name: "JavaScript", category: "front-end", icon: "ri-javascript-fill" },
+  { name: "TypeScript", category: "front-end", icon: "ri-code-s-slash-line" },
+
+  { name: "Tailwind", category: "front-end", icon: "ri-windy-line" },
+  { name: "shadcn/ui", category: "front-end", icon: "ri-layout-grid-fill" },
+  { name: "Axios", category: "front-end", icon: "ri-exchange-funds-fill" },
+
+  // Back-end
+  { name: "Node.js", category: "back-end", icon: "ri-nodejs-fill" },
+  { name: "MongoDB", category: "back-end", icon: "ri-database-2-fill" },
+  { name: "C#", category: "back-end", icon: "ri-code-box-fill" },
+  { name: "Java", category: "back-end", icon: "ri-java-fill" },
+
+  // Ferramentas
+  { name: "Git", category: "ferramentas", icon: "ri-git-branch-fill" },
+  { name: "GitHub", category: "ferramentas", icon: "ri-github-fill" },
   {
-    name: "Angular",
-    category: "front-end",
-    icon: "ri-angularjs-fill",
-    proficiency: 25,
+    name: "Visual Studio Code",
+    category: "ferramentas",
+    icon: "ri-code-s-fill",
   },
+  { name: "Figma", category: "ferramentas", icon: "ri-figma-fill" },
+  { name: "Postman", category: "ferramentas", icon: "ri-flask-fill" },
+  { name: "Vercel", category: "ferramentas", icon: "ri-upload-cloud-2-fill" },
   {
-    name: "HTML",
-    category: "front-end",
-    icon: "ri-html5-fill",
-    proficiency: 75,
-  },
-  {
-    name: "CSS",
-    category: "front-end",
-    icon: "ri-css3-fill",
-    proficiency: 71,
-  },
-  {
-    name: "JavaScript",
-    category: "front-end",
-    icon: "ri-javascript-fill",
-    proficiency: 50,
-  },
-  {
-    name: "React",
-    category: "front-end",
-    icon: "ri-reactjs-fill",
-    proficiency: 42,
-  },
-  {
-    name: "TypeScript",
-    category: "front-end",
-    icon: "ri-reactjs-fill",
-    proficiency: 40,
-  },
-  {
-    name: "React Router",
-    category: "front-end",
-    icon: "ri-route-fill",
-    proficiency: 38,
-  },
-  {
-    name: "Next.js",
-    category: "front-end",
-    icon: "ri-nextjs-fill",
-    proficiency: 32,
-  },
-  {
-    name: "C#",
-    category: "back-end",
-    icon: "ri-terminal-box-fill",
-    proficiency: 35,
-  },
-  {
-    name: "Java",
-    category: "back-end",
-    icon: "ri-java-fill",
-    proficiency: 28,
+    name: "GitHub Pages",
+    category: "ferramentas",
+    icon: "ri-pages-fill",
   },
 
+  // Libs
   {
-    name: "Git",
-    category: "ferramentas",
-    icon: "ri-git-branch-fill",
-    proficiency: 25,
+    name: "React Hook Form",
+    category: "libs",
+    icon: "ri-reactjs-fill",
   },
   {
-    name: "GitHub",
-    category: "ferramentas",
-    icon: "ri-github-fill",
-    proficiency: 47,
+    name: "Zod",
+    category: "libs",
+    icon: "ri-shield-check-fill",
   },
   {
-    name: "Canva",
-    category: "ferramentas",
-    icon: "ri-palette-fill",
-    proficiency: 78,
-  },
-  {
-    name: "Photoshop",
-    category: "ferramentas",
-    icon: "ri-image-edit-fill",
-    proficiency: 50,
-  },
-  {
-    name: "Figma",
-    category: "ferramentas",
-    icon: "ri-figma-fill",
-    proficiency: 41,
+    name: "Framer Motion",
+    category: "libs",
+    icon: "ri-run-fill",
   },
 ];
 
 export default function Stacks() {
-  const getProficiencyColor = (proficiency: number) => {
-    if (proficiency >= 90) return "#15803d"; // Verde escuro (expert)
-    if (proficiency >= 80) return "#22c55e"; // Verde (avançado)
-    if (proficiency >= 70) return "#4ade80"; // Verde claro (competente)
-    if (proficiency >= 60) return "#eab308"; // Amarelo (intermediário alto)
-    if (proficiency >= 50) return "#f97316"; // Laranja (intermediário)
-    if (proficiency >= 30) return "#ef4444"; // Vermelho (iniciante)
-    return "#dc2626"; // Vermelho escuro (básico)
-  };
   return (
-    <>
-      <section className={style.stacks}>
-        <div className={style.stacks__conteudo}>
-          <h2 className={style.stacks__conteudo__titulo}>STACKS™</h2>
+    <section className={style.stacks}>
+      <div className={style.stacks__conteudo}>
+        <h2 className={style.stacks__conteudo__titulo}>STACKS™</h2>
 
-          <div className={style.stacks__conteudo__grid}>
-            {["front-end", "back-end", "ferramentas"].map((category) => (
-              <div
-                key={category}
-                className={style.stacks__conteudo__grid__categoria}
-              >
-                <div
-                  className={style.stacks__conteudo__grid__categoria__header}
+        <div className={style.stacks__conteudo__grid}>
+          {["front-end", "back-end", "libs", "ferramentas"].map((category) => (
+            <div
+              key={category}
+              className={style.stacks__conteudo__grid__categoria}
+            >
+              <div className={style.stacks__conteudo__grid__categoria__header}>
+                <i className="ri-brain-fill" />
+                <h3
+                  className={
+                    style.stacks__conteudo__grid__categoria__header__titulo
+                  }
                 >
-                  <i className="ri-brain-fill" />
-                  <h3
-                    className={
-                      style.stacks__conteudo__grid__categoria__header__titulo
-                    }
-                  >
-                    {category.toUpperCase()}
-                  </h3>
-                </div>
-                <div className={style.stacks__conteudo__grid__tech_list}>
-                  {techStacks
-                    .filter((tech) => tech.category === category)
-                    .map((tech, index) => (
+                  {category.toUpperCase()}
+                </h3>
+              </div>
+              <div className={style.stacks__conteudo__grid__tech_list}>
+                {techStacks
+                  .filter((tech) => tech.category === category)
+                  .map((tech, index) => (
+                    <div
+                      key={index}
+                      className={style.stacks__conteudo__grid__tech_list__item}
+                    >
                       <div
-                        key={index}
                         className={
-                          style.stacks__conteudo__grid__tech_list__item
+                          style.stacks__conteudo__grid__tech_list__item__info
                         }
                       >
-                        <div
-                          className={
-                            style.stacks__conteudo__grid__tech_list__item__info
-                          }
-                        >
-                          <i className={tech.icon}></i>
-                          <span
-                            className={
-                              style.stacks__conteudo__grid__tech_list__item__info__titulo
-                            }
-                          >
-                            {tech.name}
-                          </span>
-                        </div>
+                        <i className={tech.icon}></i>
                         <span
                           className={
-                            style.stacks__conteudo__grid__tech_list__item__nivel
+                            style.stacks__conteudo__grid__tech_list__item__info__titulo
                           }
-                          style={{
-                            color: getProficiencyColor(tech.proficiency),
-                          }}
                         >
-                          {tech.proficiency}%
+                          {tech.name}
                         </span>
-                        <div
-                          className={
-                            style.stacks__conteudo__grid__tech_list__item__nivel__barra
-                          }
-                        >
-                          <div
-                            className={
-                              style.stacks__conteudo__grid__tech_list__item__nivel__barra__fill
-                            }
-                            style={{
-                              width: `${tech.proficiency}%`,
-                              backgroundColor: getProficiencyColor(
-                                tech.proficiency
-                              ),
-                            }}
-                          />
-                        </div>
                       </div>
-                    ))}
-                </div>
+                    </div>
+                  ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
