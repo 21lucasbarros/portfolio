@@ -38,11 +38,6 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <a href="#stacks" onClick={scrollToElement}>
-              STACKS
-            </a>
-          </li>
-          <li>
             <a href="#projetos" onClick={scrollToElement}>
               PROJETOS
             </a>
