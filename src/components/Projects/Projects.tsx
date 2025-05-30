@@ -49,9 +49,43 @@ export default function Projects() {
       live: "https://cinema-database.vercel.app/",
     },
     {
+      titulo: "R&A Comunicação Visual",
+      descricao:
+        "Landing page desenvolvida para a mãe de um amigo, apresentando o trabalho dela na área de comunicação visual. O site destaca os serviços oferecidos, portfólio e informações sobre o projeto, com foco em design limpo, responsivo e navegação intuitiva.",
+      imagem: "../imagem/projetos/ra-comunicacao.png",
+      tecnologias: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "Framer Motion",
+        "React Hook Form",
+        "Zod",
+      ],
+      github: "https://github.com/21lucasbarros/projeto-ilha-outdoor",
+      live: "https://projeto-ilha-outdoor.vercel.app/",
+    },
+    {
+      titulo: "SNRK Sneaker Shop",
+      descricao:
+        "Landing page de E-commerce desenvolvida como desafio técnico, simulando uma página de produto de uma loja de sneakers. Conta com interface responsiva, seleção dinâmica de variantes (cor e tamanho), cálculo de frete via API do ViaCEP e salvamento dos dados do usuário por tempo limitado. Projeto inspirado em plataformas como Mercado Livre e Shopee.",
+      imagem: "../imagem/projetos/snrk.png",
+      tecnologias: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Zod",
+        "Lucide React",
+      ],
+      github: "https://github.com/21lucasbarros/snrk",
+      live: "https://snrk.vercel.app/",
+    },
+    {
       titulo: "My To-Do List",
       descricao:
-        "Aplicação web full stack desenvolvida em um desafio acadêmico, com uma To-Do List funcional. O front-end usa Angular e CSS, com foco em responsividade. O back-end foi feito em JavaScript com Express.js, Mongoose e MongoDB, permitindo criar, editar e excluir tarefas.",
+        "Aplicação web full stack desenvolvida em um desafio acadêmico, com uma To-Do List funcional. O front-end foi feito em Angular, TypeScript e CSS, e o back-end em Express.js, MongoDB e Mongoose. Atualmente, o front-end segue online, mas o back-end está temporariamente inativo por conta do fim do semestre e dos créditos expirados na Railway.",
       imagem: "../../imagem/projetos/my-to-do-list.png",
       tecnologias: [
         "Angular",
