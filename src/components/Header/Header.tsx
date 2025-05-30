@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import style from "./Header.module.scss";
+import { scrollToElement } from "../../utils/scrollToElement";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -12,17 +13,6 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const scrollToElement = (
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-  ) => {
-    event.preventDefault();
-    const href = event.currentTarget.getAttribute("href");
-    if (!href) return;
-
-    const element = document.querySelector(href);
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <header
@@ -45,6 +35,11 @@ export default function Header() {
           <li>
             <a href="#formacao" onClick={scrollToElement}>
               FORMAÇÕES
+            </a>
+          </li>
+          <li>
+            <a href="#stacks" onClick={scrollToElement}>
+              STACKS
             </a>
           </li>
           <li>

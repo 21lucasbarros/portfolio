@@ -58,7 +58,7 @@ const techStacks = [
 
 export default function Stacks() {
   return (
-    <section className={style.stacks}>
+    <section className={style.stacks} id="stacks">
       <div className={style.stacks__conteudo}>
         <h2 className={style.stacks__conteudo__titulo}>STACKS™</h2>
 

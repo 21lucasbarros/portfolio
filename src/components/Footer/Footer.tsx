@@ -1,18 +1,8 @@
+import { scrollToElement } from "../../utils/scrollToElement";
 import styles from "./Footer.module.scss";
 
 export default function Footer() {
   const anoAtual = new Date().getFullYear();
-
-  const scrollToElement = (
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-  ) => {
-    event.preventDefault();
-    const href = event.currentTarget.getAttribute("href");
-    if (!href) return;
-
-    const element = document.querySelector(href);
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <footer className={styles.rodape}>
@@ -45,6 +35,15 @@ export default function Footer() {
                   onClick={scrollToElement}
                 >
                   FORMAÇÕES
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#stacks"
+                  className={styles.rodape__conteudo__link}
+                  onClick={scrollToElement}
+                >
+                  STACKS
                 </a>
               </li>
               <li>
