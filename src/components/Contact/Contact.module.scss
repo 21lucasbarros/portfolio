@@ -42,6 +42,7 @@
           gap: 1rem;
           font-family: var(--fontMono);
           text-decoration: none;
+          font-size: 1.1rem;
           color: var(--corBranco);
           transition: opacity 0.2s ease;
 
@@ -52,6 +53,7 @@
 
         &__social {
           display: flex;
+          font-size: 1.45rem;
           gap: 1rem;
 
           &_link {
