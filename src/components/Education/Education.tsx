@@ -86,6 +86,17 @@ export default function Education() {
       certificado:
         "https://cursos.alura.com.br/user/lucasweacked21/course/react-modernizando-escrever-typescript/certificate",
     },
+    {
+      curso: "Imersão Dev 9ª Edição - Alura Cursos",
+      certificado:
+        "https://cursos.alura.com.br/user/lucasweacked21/immersion/certificate/64560",
+    },
+    {
+      curso:
+        "Vue 3: entendendo componentes, diretivas e reatividade no framework - Alura Cursos",
+      certificado:
+        "https://cursos.alura.com.br/user/lucasweacked21/course/vue-3-componentes-diretivas-reatividade-framework/certificate",
+    },
   ];
   return (
     <>
