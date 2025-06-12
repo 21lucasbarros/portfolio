@@ -10,6 +10,7 @@ const techStacks = [
   { name: "SCSS", category: "front-end", icon: "ri-braces-fill" },
   { name: "JavaScript", category: "front-end", icon: "ri-javascript-fill" },
   { name: "TypeScript", category: "front-end", icon: "ri-code-s-slash-line" },
+  { name: "Vue.js", category: "front-end", icon: "ri-vuejs-fill" },
 
   { name: "Tailwind", category: "front-end", icon: "ri-windy-line" },
   { name: "shadcn/ui", category: "front-end", icon: "ri-layout-grid-fill" },
