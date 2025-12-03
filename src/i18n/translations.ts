@@ -337,10 +337,10 @@ export const projectTranslations: Record<
       description:
         "API REST para gerenciamento de certificados digitais A1 e A3 com CRUD completo, validações, múltiplos e-mails de notificação e ordenação automática por vencimento.",
     },
-    "e-tudo-mentira": {
-      title: "É Tudo Mentira™",
+    "bricks-ecommerce": {
+      title: "Bricks E-Commerce",
       description:
-        "Micro SaaS de livros fictícios com histórias e autores inventados. Projeto em desenvolvimento com planos de integrar autenticação e pagamentos Stripe/Mercado Pago.",
+        "E-commerce completo desenvolvido para cliente com pagamentos Stripe, painel administrativo e gerenciamento de produtos.",
     },
     "cinema-database": {
       title: "Cinema Database",
@@ -384,10 +384,10 @@ export const projectTranslations: Record<
       description:
         "REST API for managing A1 and A3 digital certificates with complete CRUD, validations, multiple notification emails and automatic expiration sorting.",
     },
-    "e-tudo-mentira": {
-      title: "É Tudo Mentira™",
+    "bricks-ecommerce": {
+      title: "Bricks E-Commerce",
       description:
-        "Fictional books micro SaaS with invented stories and authors. Project in development with plans to integrate authentication and Stripe/Mercado Pago payments.",
+        "Complete e-commerce developed for a client with Stripe payments, admin panel and product management.",
     },
     "cinema-database": {
       title: "Cinema Database",
@@ -431,10 +431,10 @@ export const projectTranslations: Record<
       description:
         "API REST para gestión de certificados digitales A1 y A3 con CRUD completo, validaciones, múltiples correos de notificación y ordenación automática por vencimiento.",
     },
-    "e-tudo-mentira": {
-      title: "É Tudo Mentira™",
+    "bricks-ecommerce": {
+      title: "Bricks E-Commerce",
       description:
-        "Micro SaaS de libros ficticios con historias y autores inventados. Proyecto en desarrollo con planes de integrar autenticación y pagos Stripe/Mercado Pago.",
+        "E-commerce completo desarrollado para cliente con pagos Stripe, panel administrativo y gestión de productos.",
     },
     "cinema-database": {
       title: "Cinema Database",
