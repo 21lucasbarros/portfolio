@@ -186,7 +186,10 @@ export function Projects() {
   }));
 
   return (
-    <section id="projects" className="relative py-32 px-8 bg-zinc-900">
+    <section
+      id="projects"
+      className="relative py-16 md:py-24 lg:py-32 px-4 md:px-6 lg:px-8 bg-zinc-900"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -194,24 +197,26 @@ export function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true }}
-          className="mb-20"
+          className="mb-12 md:mb-16 lg:mb-20"
         >
-          <div className="flex items-end justify-end mb-4">
-            <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-bold tracking-tight text-[#f7f7f7]">
+          <div className="flex items-end justify-end mb-3 md:mb-4">
+            <h2 className="text-[clamp(2rem,4.5vw,4rem)] font-bold tracking-tight text-[#f7f7f7]">
               {t.projects.title.toUpperCase()}
-              <span className="text-xl align-super opacity-60">™</span>
+              <span className="text-lg md:text-xl align-super opacity-60">
+                ™
+              </span>
             </h2>
           </div>
-          <div className="flex items-center justify-end gap-4">
-            <span className="text-sm font-mono text-[#f7f7f7]/50 uppercase tracking-wider">
+          <div className="flex items-center justify-end gap-3 md:gap-4">
+            <span className="text-xs md:text-sm font-mono text-[#f7f7f7]/50 uppercase tracking-wider">
               {projects.length} WORKS
             </span>
-            <div className="w-16 h-[1px] bg-blue-500"></div>
+            <div className="w-12 md:w-16 h-[1px] bg-blue-500"></div>
           </div>
         </motion.div>
 
         {/* Projects Grid - 3 columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7 lg:gap-8">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} index={index} />
           ))}

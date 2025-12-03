@@ -37,8 +37,19 @@ export interface Translations {
     university: string;
     location: string;
     period: string;
+    currentPeriod: string;
     languages: string;
     certifications: string;
+    languageNames: {
+      portuguese: string;
+      english: string;
+      spanish: string;
+    };
+    languageLevels: {
+      native: string;
+      preIntermediate: string;
+      basic: string;
+    };
   };
   projects: {
     title: string;
@@ -105,8 +116,19 @@ export const translations: Record<Language, Translations> = {
       university: "Universidade Santa Cecília (UNISANTA)",
       location: "Santos, São Paulo",
       period: "2023 — 2026",
+      currentPeriod: "2023—ATUALMENTE • 5º SEMESTRE",
       languages: "IDIOMAS",
       certifications: "CERTIFICAÇÕES",
+      languageNames: {
+        portuguese: "Português",
+        english: "Inglês",
+        spanish: "Espanhol",
+      },
+      languageLevels: {
+        native: "NATIVO",
+        preIntermediate: "PRÉ-INTERMEDIÁRIO",
+        basic: "BÁSICO",
+      },
     },
     projects: {
       title: "Projetos",
@@ -173,8 +195,19 @@ export const translations: Record<Language, Translations> = {
       university: "Santa Cecília University (UNISANTA)",
       location: "Santos, São Paulo",
       period: "2023 — 2026",
+      currentPeriod: "2023—CURRENT • 5TH SEMESTER",
       languages: "LANGUAGES",
       certifications: "CERTIFICATIONS",
+      languageNames: {
+        portuguese: "Portuguese",
+        english: "English",
+        spanish: "Spanish",
+      },
+      languageLevels: {
+        native: "NATIVE",
+        preIntermediate: "PRE-INTERMEDIATE",
+        basic: "BASIC",
+      },
     },
     projects: {
       title: "Projects",
@@ -241,8 +274,19 @@ export const translations: Record<Language, Translations> = {
       university: "Universidad Santa Cecília (UNISANTA)",
       location: "Santos, São Paulo",
       period: "2023 — 2026",
+      currentPeriod: "2023—ACTUALIDAD • 5º SEMESTRE",
       languages: "IDIOMAS",
       certifications: "CERTIFICACIONES",
+      languageNames: {
+        portuguese: "Portugués",
+        english: "Inglés",
+        spanish: "Español",
+      },
+      languageLevels: {
+        native: "NATIVO",
+        preIntermediate: "PRE-INTERMEDIO",
+        basic: "BÁSICO",
+      },
     },
     projects: {
       title: "Proyectos",

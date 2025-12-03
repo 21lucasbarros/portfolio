@@ -62,30 +62,30 @@ export function Hero() {
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent via-zinc-900/50 to-zinc-900 pointer-events-none"></div>
 
       <section
-        className="flex items-center p-8 relative h-screen pt-32"
+        className="flex items-center px-4 md:px-6 lg:px-8 relative h-screen pt-24 md:pt-28"
         id="inicio"
       >
         <div className="max-w-7xl mx-auto w-full h-full flex flex-col justify-between">
           <div className="flex-1 flex flex-col justify-center">
-            <h1 className="text-[clamp(2.5rem,8vw,6rem)] leading-[0.9] font-bold tracking-[-0.02em] mb-8 whitespace-pre-line">
+            <h1 className="text-[clamp(2rem,6vw,6rem)] leading-[0.95] font-bold tracking-[-0.02em] mb-6 md:mb-8 whitespace-pre-line">
               {t.hero.roleTitle}
               <span className="text-[0.5em] align-super">™</span>
             </h1>
-            <p className="text-[clamp(0.875rem,1.5vw,1rem)] max-w-[600px] opacity-70 mb-6 leading-relaxed">
+            <p className="text-[clamp(0.875rem,1.2vw,1rem)] max-w-[600px] opacity-70 mb-5 md:mb-6 leading-relaxed">
               {t.hero.description}
             </p>
             <a
               href="/docs/curriculo.pdf"
               download
-              className="flex items-center text-xs border border-white/50 px-3 py-3 transition-colors hover:bg-white/10 no-underline group w-fit"
+              className="flex items-center text-xs md:text-sm border border-white/50 px-4 py-2.5 md:py-3 transition-colors hover:bg-white/10 no-underline group w-fit"
             >
               <DownloadIcon className="w-4 h-4 mr-2" />
               {t.hero.downloadCV}
             </a>
           </div>
-          <div className="flex justify-between items-end pb-4">
-            <div className="flex items-center gap-4">
-              <span className="text-xs">{t.hero.scroll}</span>
+          <div className="flex justify-between items-end pb-3 md:pb-4">
+            <div className="flex items-center gap-3 md:gap-4">
+              <span className="text-xs md:text-sm">{t.hero.scroll}</span>
               <motion.div
                 className="w-[60px] h-[1px] bg-current"
                 animate={{

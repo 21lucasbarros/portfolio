@@ -31,7 +31,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       className="group relative"
     >
       {/* Image Container */}
-      <div className="relative aspect-video overflow-hidden bg-zinc-800 border border-[#f7f7f7]/10 mb-5">
+      <div className="relative aspect-video overflow-hidden bg-zinc-800 border border-[#f7f7f7]/10 mb-4 md:mb-5">
         <img
           src={project.image}
           alt={project.title}
@@ -80,13 +80,13 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       </div>
 
       {/* Content */}
-      <div className="space-y-3">
+      <div className="space-y-2.5 md:space-y-3">
         {/* Index and Title */}
-        <div className="space-y-2">
+        <div className="space-y-1.5 md:space-y-2">
           <span className="text-xs font-mono text-blue-500">
             {String(index + 1).padStart(2, "0")}
           </span>
-          <h3 className="text-xl font-semibold text-[#f7f7f7] leading-tight group-hover:text-blue-400 transition-colors duration-300">
+          <h3 className="text-lg md:text-xl font-semibold text-[#f7f7f7] leading-tight group-hover:text-blue-400 transition-colors duration-300">
             {project.title}
           </h3>
         </div>

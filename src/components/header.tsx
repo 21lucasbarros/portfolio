@@ -29,16 +29,18 @@ export function Header() {
   const currentLanguage = languages.find((lang) => lang.code === language);
 
   return (
-    <header className="fixed top-0 left-0 right-0 px-50 py-8 z-[1000] backdrop-blur-sm bg-zinc-900/80 border-b border-zinc-800/50">
-      <div className="max-w-7xl mx-auto w-full px-8">
+    <header className="fixed top-0 left-0 right-0 py-4 md:py-6 z-[1000] backdrop-blur-sm bg-zinc-900/80 border-b border-zinc-800/50">
+      <div className="max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-8">
         <div className="flex flex-row justify-between items-center">
-          <div className="flex items-center gap-3">
-            <Code2 className="h-10 w-10 text-blue-500" />
-            <span className="text-xl font-bold hidden sm:block">Portfolio</span>
+          <div className="flex items-center gap-2 md:gap-3">
+            <Code2 className="h-7 w-7 md:h-9 md:w-9 text-blue-500" />
+            <span className="text-lg md:text-xl font-bold hidden sm:block">
+              Portfolio
+            </span>
           </div>
 
-          <div className="flex items-center gap-6">
-            <nav className="hidden md:flex gap-6">
+          <div className="flex items-center gap-3 md:gap-4 lg:gap-6">
+            <nav className="hidden md:flex gap-4 lg:gap-6">
               {navItems.map((item, index) => {
                 return (
                   <a

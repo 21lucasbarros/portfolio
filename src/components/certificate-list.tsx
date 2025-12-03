@@ -134,10 +134,10 @@ const cursos: Curso[] = [
 export default function CertificateList() {
   return (
     <>
-      <p className="text-base font-mono text-[#f7f7f7] mb-6">
+      <p className="text-sm md:text-base font-mono text-[#f7f7f7] mb-4 md:mb-6">
         {cursos.length} ITENS
       </p>
-      <div className="space-y-0 max-h-[500px] overflow-y-auto pr-4 scrollbar-thin">
+      <div className="space-y-0 max-h-[350px] md:max-h-[450px] overflow-y-auto pr-2 md:pr-4 scrollbar-thin">
         {cursos.map((curso, index) => (
           <motion.a
             key={index}
@@ -148,23 +148,23 @@ export default function CertificateList() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.3, delay: index * 0.02 }}
             viewport={{ once: true }}
-            className="group flex items-start gap-3 py-3 border-b border-[#f7f7f7]/5 hover:border-blue-400/30 transition-all duration-300"
+            className="group flex items-start gap-2.5 md:gap-3 py-2.5 md:py-3 border-b border-[#f7f7f7]/5 hover:border-blue-400/30 transition-all duration-300"
           >
             {curso.tipo === "faculdade" ? (
               <FileText
-                className="w-4 h-4 text-blue-400/70 mt-0.5 flex-shrink-0"
+                className="w-3.5 h-3.5 md:w-4 md:h-4 text-blue-400/70 mt-0.5 flex-shrink-0"
                 strokeWidth={1.5}
               />
             ) : (
-              <div className="w-4 h-4 mt-1 flex-shrink-0 flex items-center justify-center">
+              <div className="w-3.5 h-3.5 md:w-4 md:h-4 mt-1 flex-shrink-0 flex items-center justify-center">
                 <div className="w-1 h-1 rounded-full bg-[#f7f7f7]/30 group-hover:bg-blue-400 transition-colors"></div>
               </div>
             )}
-            <span className="text-base text-[#f7f7f7]/60 group-hover:text-[#f7f7f7]/90 transition-colors leading-relaxed flex-1">
+            <span className="text-sm md:text-base text-[#f7f7f7]/60 group-hover:text-[#f7f7f7]/90 transition-colors leading-relaxed flex-1">
               {curso.curso}
             </span>
             <ExternalLink
-              className="w-3.5 h-3.5 text-[#f7f7f7]/20 group-hover:text-blue-400 transition-colors flex-shrink-0 mt-0.5"
+              className="w-3 h-3 md:w-3.5 md:h-3.5 text-[#f7f7f7]/20 group-hover:text-blue-400 transition-colors flex-shrink-0 mt-0.5"
               strokeWidth={1.5}
             />
           </motion.a>

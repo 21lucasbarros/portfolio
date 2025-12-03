@@ -89,7 +89,10 @@ export function Contact() {
   ];
 
   return (
-    <section id="contact" className="relative py-32 px-8 bg-zinc-900">
+    <section
+      id="contact"
+      className="relative py-16 md:py-24 lg:py-32 px-4 md:px-6 lg:px-8 bg-zinc-900"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -97,31 +100,31 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true }}
-          className="mb-20"
+          className="mb-12 md:mb-16 lg:mb-20"
         >
-          <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-bold tracking-tight mb-4 text-[#f7f7f7]">
+          <h2 className="text-[clamp(2rem,4.5vw,4rem)] font-bold tracking-tight mb-3 md:mb-4 text-[#f7f7f7]">
             {t.contact.title.toUpperCase()}
-            <span className="text-xl align-super opacity-60">™</span>
+            <span className="text-lg md:text-xl align-super opacity-60">™</span>
           </h2>
-          <div className="w-16 h-[1px] bg-blue-500 mt-4"></div>
-          <p className="text-[#f7f7f7]/60 text-base mt-6 font-light max-w-2xl">
+          <div className="w-12 md:w-16 h-[1px] bg-blue-500 mt-3 md:mt-4"></div>
+          <p className="text-[#f7f7f7]/60 text-sm md:text-base mt-5 md:mt-6 font-light max-w-2xl">
             {t.contact.subtitle}
           </p>
         </motion.div>
 
         {/* Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-16 lg:gap-20">
           {/* Left - Contact Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
-            className="lg:col-span-1 space-y-12"
+            className="lg:col-span-1 space-y-8 md:space-y-10 lg:space-y-12"
           >
             {/* Email */}
             <div>
-              <p className="text-xs font-mono tracking-[0.2em] text-[#f7f7f7]/40 mb-4 uppercase">
+              <p className="text-xs font-mono tracking-[0.2em] text-[#f7f7f7]/40 mb-3 md:mb-4 uppercase">
                 Email
               </p>
               <motion.a
@@ -131,7 +134,7 @@ export function Contact() {
                 transition={{ duration: 0.2 }}
               >
                 <div className="flex items-center gap-2">
-                  <span className="text-lg text-[#f7f7f7] group-hover:text-blue-400 transition-colors">
+                  <span className="text-base md:text-lg text-[#f7f7f7] group-hover:text-blue-400 transition-colors break-all">
                     devlucasbarros@gmail.com
                   </span>
                   <ArrowUpRight
@@ -177,9 +180,12 @@ export function Contact() {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="space-y-6 md:space-y-8"
+            >
               {/* Nome e Email */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -261,7 +267,7 @@ export function Contact() {
                 <Textarea
                   id="message"
                   placeholder={t.contact.messagePlaceholder}
-                  className={`min-h-[200px] bg-transparent border-[#f7f7f7]/10 border-b border-t-0 border-l-0 border-r-0 rounded-none px-0 resize-none focus-visible:border-[#f7f7f7]/30 focus-visible:ring-0 transition-colors text-[#f7f7f7] placeholder:text-[#f7f7f7]/20 ${
+                  className={`min-h-[150px] md:min-h-[180px] bg-transparent border-[#f7f7f7]/10 border-b border-t-0 border-l-0 border-r-0 rounded-none px-0 resize-none focus-visible:border-[#f7f7f7]/30 focus-visible:ring-0 transition-colors text-[#f7f7f7] placeholder:text-[#f7f7f7]/20 ${
                     errors.message ? "border-red-400/50" : ""
                   }`}
                   {...register("message")}
@@ -290,7 +296,7 @@ export function Contact() {
                   disabled={isSubmitting}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group relative px-12 py-5 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium text-sm tracking-wide overflow-hidden transition-all hover:from-blue-600 hover:to-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="group relative px-8 md:px-12 py-4 md:py-5 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium text-xs md:text-sm tracking-wide overflow-hidden transition-all hover:from-blue-600 hover:to-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <motion.span className="relative z-10 flex items-center gap-3">
                     {isSubmitting ? (

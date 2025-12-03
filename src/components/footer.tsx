@@ -39,27 +39,27 @@ export function Footer() {
   ];
 
   return (
-    <footer className="relative bg-zinc-900 border-t border-white/10 px-6 pt-20 pb-8 mt-32 overflow-hidden">
+    <footer className="relative bg-zinc-900 border-t border-white/10 px-4 md:px-6 lg:px-8 pt-12 md:pt-16 lg:pt-20 pb-6 md:pb-8 mt-16 md:mt-24 lg:mt-32 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-t from-white/[0.02] to-transparent pointer-events-none" />
       <div className="relative max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 mb-16">
-          <section className="md:col-span-5 flex flex-col gap-6">
-            <div className="flex items-center gap-3">
-              <Code2 className="w-8 h-8 text-white" />
-              <span className="text-xl font-bold text-white tracking-tight">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 mb-10 md:mb-12 lg:mb-16">
+          <section className="md:col-span-5 flex flex-col gap-4 md:gap-6">
+            <div className="flex items-center gap-2 md:gap-3">
+              <Code2 className="w-7 h-7 md:w-8 md:h-8 text-white" />
+              <span className="text-lg md:text-xl font-bold text-white tracking-tight">
                 Lucas Barros Simon
               </span>
             </div>
-            <p className="font-mono text-sm text-white/60 leading-relaxed max-w-sm">
+            <p className="font-mono text-xs md:text-sm text-white/60 leading-relaxed max-w-sm">
               {t.footer.description}
             </p>
           </section>
 
           <nav className="md:col-span-3">
-            <h3 className="font-mono text-xs font-semibold text-white/40 tracking-wider mb-6 uppercase">
+            <h3 className="font-mono text-xs font-semibold text-white/40 tracking-wider mb-4 md:mb-5 lg:mb-6 uppercase">
               {t.footer.navigation}
             </h3>
-            <ul className="flex flex-col gap-3">
+            <ul className="flex flex-col gap-2.5 md:gap-3">
               {navigationLinks.map((link) => (
                 <li key={link.href}>
                   <a
@@ -76,10 +76,10 @@ export function Footer() {
           </nav>
 
           <section className="md:col-span-4">
-            <h3 className="font-mono text-xs font-semibold text-white/40 tracking-wider mb-6 uppercase">
+            <h3 className="font-mono text-xs font-semibold text-white/40 tracking-wider mb-4 md:mb-5 lg:mb-6 uppercase">
               {t.footer.connect}
             </h3>
-            <ul className="flex flex-col gap-3">
+            <ul className="flex flex-col gap-2.5 md:gap-3">
               {socialLinks.map((social) => {
                 const Icon = social.icon;
                 return (
@@ -102,15 +102,15 @@ export function Footer() {
           </section>
         </div>
 
-        <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mb-8" />
+        <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mb-6 md:mb-8" />
 
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="font-mono text-xs text-white/50 text-center md:text-left">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4">
+          <div className="font-mono text-[10px] md:text-xs text-white/50 text-center md:text-left">
             © {currentYear} Lucas Barros Simon. {t.footer.rights}.
           </div>
           <div className="font-mono text-xs text-white/50 flex items-center gap-3">
             <span className="px-2 py-1 rounded bg-white/5 border border-white/10">
-              v1.0.0
+              v2.0.0
             </span>
             <span className="w-1 h-1 bg-white/30 rounded-full" />
             <span>Made in 🇧🇷 Brazil</span>
