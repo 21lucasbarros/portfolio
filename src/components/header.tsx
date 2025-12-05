@@ -33,10 +33,9 @@ export function Header() {
       <div className="max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-8">
         <div className="flex flex-row justify-between items-center">
           <div className="flex items-center gap-2 md:gap-3">
-            <Code2 className="h-7 w-7 md:h-9 md:w-9 text-blue-500" />
-            <span className="text-lg md:text-xl font-bold hidden sm:block">
-              Portfolio
-            </span>
+            <a href="#home" onClick={scrollToElement}>
+              <Code2 className="h-7 w-7 md:h-9 md:w-9 text-blue-500" />
+            </a>
           </div>
 
           <div className="flex items-center gap-3 md:gap-4 lg:gap-6">
