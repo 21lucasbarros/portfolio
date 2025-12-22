@@ -55,6 +55,8 @@ export interface Translations {
     title: string;
     viewProject: string;
     viewCode: string;
+    code: string;
+    site: string;
   };
   contact: {
     title: string;
@@ -134,6 +136,8 @@ export const translations: Record<Language, Translations> = {
       title: "Projetos",
       viewProject: "Ver Projeto",
       viewCode: "Ver Código",
+      code: "Código",
+      site: "Site",
     },
     contact: {
       title: "Contato",
@@ -213,6 +217,8 @@ export const translations: Record<Language, Translations> = {
       title: "Projects",
       viewProject: "View Project",
       viewCode: "View Code",
+      code: "Code",
+      site: "Site",
     },
     contact: {
       title: "Contact",
@@ -292,6 +298,8 @@ export const translations: Record<Language, Translations> = {
       title: "Proyectos",
       viewProject: "Ver Proyecto",
       viewCode: "Ver Código",
+      code: "Código",
+      site: "Sitio",
     },
     contact: {
       title: "Contacto",
