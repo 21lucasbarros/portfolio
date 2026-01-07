@@ -6,19 +6,17 @@ export function Hero() {
   const { t } = useLanguage();
 
   return (
-    <main className="w-full h-screen relative overflow-hidden" id="home">
-      {/* grid pattern */}
+    <main className="w-full min-h-[100dvh] relative overflow-hidden" id="home">
       <div className="absolute inset-0 opacity-10">
-        <div className="h-full w-full bg-[linear-gradient(to_right,#f7f7f7_1px,transparent_1px),linear-gradient(to_bottom,#f7f7f7_1px,transparent_1px)] bg-[length:37px_37px]"></div>
+        <div className="h-full w-full bg-[linear-gradient(to_right,#f7f7f7_1px,transparent_1px),linear-gradient(to_bottom,#f7f7f7_1px,transparent_1px)] bg-[length:24px_24px] md:bg-[length:37px_37px]"></div>
       </div>
 
-      {/* efeito de lava lamp */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute w-[500px] h-[500px] rounded-full bg-blue-500/10 blur-[120px]"
+          className="absolute w-[250px] h-[250px] md:w-[500px] md:h-[500px] rounded-full bg-blue-500/10 blur-[80px] md:blur-[120px]"
           animate={{
-            x: [0, 100, 0],
-            y: [0, 150, 0],
+            x: [0, 50, 0],
+            y: [0, 75, 0],
             scale: [1, 1.2, 1],
           }}
           transition={{
@@ -26,13 +24,13 @@ export function Hero() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          style={{ top: "10%", left: "10%" }}
+          style={{ top: "10%", left: "5%" }}
         />
         <motion.div
-          className="absolute w-[400px] h-[400px] rounded-full bg-blue-400/8 blur-[100px]"
+          className="absolute w-[200px] h-[200px] md:w-[400px] md:h-[400px] rounded-full bg-blue-400/8 blur-[60px] md:blur-[100px]"
           animate={{
-            x: [0, -150, 0],
-            y: [0, 100, 0],
+            x: [0, -75, 0],
+            y: [0, 50, 0],
             scale: [1, 1.3, 1],
           }}
           transition={{
@@ -40,13 +38,13 @@ export function Hero() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          style={{ top: "50%", right: "10%" }}
+          style={{ top: "50%", right: "5%" }}
         />
         <motion.div
-          className="absolute w-[600px] h-[600px] rounded-full bg-blue-600/6 blur-[130px]"
+          className="absolute w-[300px] h-[300px] md:w-[600px] md:h-[600px] rounded-full bg-blue-600/6 blur-[80px] md:blur-[130px]"
           animate={{
-            x: [0, 80, 0],
-            y: [0, -100, 0],
+            x: [0, 40, 0],
+            y: [0, -50, 0],
             scale: [1, 1.1, 1],
           }}
           transition={{
@@ -54,40 +52,67 @@ export function Hero() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          style={{ bottom: "5%", left: "30%" }}
+          style={{ bottom: "5%", left: "20%" }}
         />
       </div>
 
-      {/* Transição suave para próxima seção */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent via-zinc-900/50 to-zinc-900 pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-24 md:h-40 bg-gradient-to-b from-transparent via-zinc-900/50 to-zinc-900 pointer-events-none"></div>
 
       <section
-        className="flex items-center px-4 md:px-6 lg:px-8 relative h-screen pt-24 md:pt-28"
+        className="flex items-center px-5 sm:px-6 md:px-8 lg:px-12 relative min-h-[100dvh] pt-20 pb-16 sm:pt-24 md:pt-28"
         id="inicio"
       >
-        <div className="max-w-7xl mx-auto w-full h-full flex flex-col justify-between">
+        <div className="max-w-7xl mx-auto w-full h-full flex flex-col justify-between gap-8 md:gap-0">
           <div className="flex-1 flex flex-col justify-center">
-            <h1 className="text-[clamp(2rem,6vw,6rem)] leading-[0.95] font-bold tracking-[-0.02em] mb-6 md:mb-8 whitespace-pre-line">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="text-[2.5rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] xl:text-[6rem] leading-[0.95] font-bold tracking-[-0.02em] mb-5 sm:mb-6 md:mb-8 whitespace-pre-line"
+            >
               {t.hero.roleTitle}
-              <span className="text-[0.5em] align-super">™</span>
-            </h1>
-            <p className="text-[clamp(0.875rem,1.2vw,1rem)] max-w-[600px] opacity-70 mb-5 md:mb-6 leading-relaxed">
+              <span className="text-[0.4em] sm:text-[0.5em] align-super opacity-60">
+                ™
+              </span>
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.6,
+                delay: 0.1,
+                ease: [0.16, 1, 0.3, 1],
+              }}
+              className="text-sm sm:text-base md:text-lg max-w-[90%] sm:max-w-[500px] md:max-w-[600px] opacity-70 mb-6 md:mb-8 leading-relaxed"
+            >
               {t.hero.description}
-            </p>
-            <a
+            </motion.p>
+            <motion.a
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.6,
+                delay: 0.2,
+                ease: [0.16, 1, 0.3, 1],
+              }}
               href="/docs/curriculo.pdf"
               download
-              className="flex items-center text-xs md:text-sm border border-white/50 px-4 py-2.5 md:py-3 transition-colors hover:bg-white/10 no-underline group w-fit"
+              className="flex items-center text-xs sm:text-sm border border-white/50 px-4 sm:px-5 py-3 sm:py-3.5 transition-colors hover:bg-white/10 active:bg-white/20 no-underline group w-fit"
             >
               <DownloadIcon className="w-4 h-4 mr-2" />
               {t.hero.downloadCV}
-            </a>
+            </motion.a>
           </div>
-          <div className="flex justify-between items-end pb-3 md:pb-4">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 sm:gap-0 pb-4 md:pb-6"
+          >
             <div className="flex items-center gap-3 md:gap-4">
-              <span className="text-xs md:text-sm">{t.hero.scroll}</span>
+              <span className="text-xs sm:text-sm">{t.hero.scroll}</span>
               <motion.div
-                className="w-[60px] h-[1px] bg-current"
+                className="w-[40px] sm:w-[60px] h-[1px] bg-current"
                 animate={{
                   scaleX: [1, 0.5, 1],
                   opacity: [1, 0.5, 1],
@@ -101,9 +126,9 @@ export function Hero() {
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-[pulse_2s_ease-in-out_infinite]" />
-              <span className="text-xs">{t.hero.available}</span>
+              <span className="text-[10px] sm:text-xs">{t.hero.available}</span>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </main>
