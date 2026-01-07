@@ -59,11 +59,11 @@ export function Hero() {
       <div className="absolute bottom-0 left-0 right-0 h-24 md:h-40 bg-gradient-to-b from-transparent via-zinc-900/50 to-zinc-900 pointer-events-none"></div>
 
       <section
-        className="flex items-center px-5 sm:px-6 md:px-8 lg:px-12 relative min-h-[100dvh] pt-20 md:pt-28"
+        className="px-5 sm:px-6 md:px-8 lg:px-12 relative min-h-[100dvh] pt-20 md:pt-28"
         id="inicio"
       >
-        <div className="max-w-7xl mx-auto w-full min-h-[calc(100dvh-5rem)] md:min-h-[calc(100dvh-7rem)] flex flex-col justify-between">
-          <div className="flex-1 flex flex-col justify-center py-8">
+        <div className="max-w-7xl mx-auto w-full h-[calc(100dvh-5rem)] md:h-[calc(100dvh-7rem)] flex flex-col">
+          <div className="flex-1 flex flex-col justify-center">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -107,12 +107,14 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex justify-between items-center pb-6 md:pb-8"
+            className="flex flex-row justify-between items-center py-4 md:py-6"
           >
-            <div className="flex items-center gap-3 md:gap-4">
-              <span className="text-xs sm:text-sm">{t.hero.scroll}</span>
+            <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
+              <span className="text-[10px] sm:text-xs md:text-sm">
+                {t.hero.scroll}
+              </span>
               <motion.div
-                className="w-10 sm:w-[60px] h-[1px] bg-current"
+                className="w-8 sm:w-10 md:w-[60px] h-[1px] bg-current"
                 animate={{
                   scaleX: [1, 0.5, 1],
                   opacity: [1, 0.5, 1],
@@ -124,9 +126,11 @@ export function Hero() {
                 }}
               />
             </div>
-            <div className="flex items-center gap-2">
-              <span className="w-2 h-2 bg-green-500 rounded-full animate-[pulse_2s_ease-in-out_infinite]" />
-              <span className="text-[10px] sm:text-xs">{t.hero.available}</span>
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-green-500 rounded-full animate-[pulse_2s_ease-in-out_infinite]" />
+              <span className="text-[9px] sm:text-[10px] md:text-xs">
+                {t.hero.available}
+              </span>
             </div>
           </motion.div>
         </div>
