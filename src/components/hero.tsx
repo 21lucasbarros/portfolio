@@ -110,11 +110,9 @@ export function Hero() {
             className="flex flex-row justify-between items-center py-4 md:py-6"
           >
             <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
-              <span className="text-[10px] sm:text-xs md:text-sm">
-                {t.hero.scroll}
-              </span>
+              <span className="text-xs sm:text-sm">{t.hero.scroll}</span>
               <motion.div
-                className="w-8 sm:w-10 md:w-[60px] h-[1px] bg-current"
+                className="w-10 sm:w-12 md:w-[60px] h-[1px] bg-current"
                 animate={{
                   scaleX: [1, 0.5, 1],
                   opacity: [1, 0.5, 1],
@@ -126,9 +124,9 @@ export function Hero() {
                 }}
               />
             </div>
-            <div className="flex items-center gap-1.5 sm:gap-2">
-              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-green-500 rounded-full animate-[pulse_2s_ease-in-out_infinite]" />
-              <span className="text-[9px] sm:text-[10px] md:text-xs">
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 bg-green-500 rounded-full animate-[pulse_2s_ease-in-out_infinite]" />
+              <span className="text-[11px] sm:text-xs md:text-sm">
                 {t.hero.available}
               </span>
             </div>
