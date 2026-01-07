@@ -17,7 +17,7 @@ export function Education() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true }}
-          className="mb-8 md:mb-16 lg:mb-20"
+          className="mb-8 md:mb-16 lg:mb-20 text-right"
         >
           <h2 className="text-3xl md:text-[clamp(2rem,4.5vw,4rem)] font-bold tracking-tight mb-2 md:mb-4 text-[#f7f7f7]">
             {t.education.title}
@@ -25,7 +25,7 @@ export function Education() {
               ™
             </span>
           </h2>
-          <div className="w-10 md:w-16 h-[1px] bg-blue-500 mt-2 md:mt-4"></div>
+          <div className="w-10 md:w-16 h-[1px] bg-blue-500 mt-2 md:mt-4 ml-auto"></div>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16">

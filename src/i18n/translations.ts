@@ -82,6 +82,12 @@ export interface Translations {
     navigation: string;
     connect: string;
   };
+  stacks: {
+    title: string;
+    frontend: string;
+    backend: string;
+    database: string;
+  };
 }
 
 export const translations: Record<Language, Translations> = {
@@ -165,6 +171,12 @@ export const translations: Record<Language, Translations> = {
       navigation: "Navegação",
       connect: "Conecte-se",
     },
+    stacks: {
+      title: "TECNOLOGIAS",
+      frontend: "Frontend",
+      backend: "Backend",
+      database: "Banco de Dados",
+    },
   },
   en: {
     header: {
@@ -246,6 +258,12 @@ export const translations: Record<Language, Translations> = {
       navigation: "Navigation",
       connect: "Connect",
     },
+    stacks: {
+      title: "TECHNOLOGIES",
+      frontend: "Frontend",
+      backend: "Backend",
+      database: "Database",
+    },
   },
   es: {
     header: {
@@ -326,6 +344,12 @@ export const translations: Record<Language, Translations> = {
         "Desarrollador Full-Stack enfocado en crear experiencias digitales únicas y funcionales. Transformando ideas en código.",
       navigation: "Navegación",
       connect: "Conectar",
+    },
+    stacks: {
+      title: "TECNOLOGÍAS",
+      frontend: "Frontend",
+      backend: "Backend",
+      database: "Base de Datos",
     },
   },
 };

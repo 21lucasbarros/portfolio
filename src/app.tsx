@@ -4,6 +4,7 @@ import { Header } from "./components/header";
 import { Hero } from "./components/hero";
 import { Projects } from "./components/projects";
 import { Contact } from "./components/contact";
+import { Stacks } from "./components/stacks";
 
 export function App() {
   return (
@@ -11,6 +12,7 @@ export function App() {
       <Header />
       <Hero />
       <Education />
+      <Stacks />
       <Projects />
       <Contact />
       <Footer />
