@@ -59,16 +59,16 @@ export function Hero() {
       <div className="absolute bottom-0 left-0 right-0 h-24 md:h-40 bg-gradient-to-b from-transparent via-zinc-900/50 to-zinc-900 pointer-events-none"></div>
 
       <section
-        className="flex items-center px-5 sm:px-6 md:px-8 lg:px-12 relative min-h-[100dvh] pt-20 pb-16 sm:pt-24 md:pt-28"
+        className="flex items-center px-5 sm:px-6 md:px-8 lg:px-12 relative min-h-[100dvh] pt-20 md:pt-28"
         id="inicio"
       >
-        <div className="max-w-7xl mx-auto w-full h-full flex flex-col justify-between gap-8 md:gap-0">
-          <div className="flex-1 flex flex-col justify-center">
+        <div className="max-w-7xl mx-auto w-full min-h-[calc(100dvh-5rem)] md:min-h-[calc(100dvh-7rem)] flex flex-col justify-between">
+          <div className="flex-1 flex flex-col justify-center py-8">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="text-[2.5rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] xl:text-[6rem] leading-[0.95] font-bold tracking-[-0.02em] mb-5 sm:mb-6 md:mb-8 whitespace-pre-line"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[6rem] leading-[0.95] font-bold tracking-[-0.02em] mb-4 sm:mb-6 md:mb-8 whitespace-pre-line"
             >
               {t.hero.roleTitle}
               <span className="text-[0.4em] sm:text-[0.5em] align-super opacity-60">
@@ -83,7 +83,7 @@ export function Hero() {
                 delay: 0.1,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="text-sm sm:text-base md:text-lg max-w-[90%] sm:max-w-[500px] md:max-w-[600px] opacity-70 mb-6 md:mb-8 leading-relaxed"
+              className="text-sm sm:text-base md:text-lg max-w-[500px] md:max-w-[600px] opacity-70 mb-5 md:mb-8 leading-relaxed"
             >
               {t.hero.description}
             </motion.p>
@@ -107,12 +107,12 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 sm:gap-0 pb-4 md:pb-6"
+            className="flex justify-between items-center pb-6 md:pb-8"
           >
             <div className="flex items-center gap-3 md:gap-4">
               <span className="text-xs sm:text-sm">{t.hero.scroll}</span>
               <motion.div
-                className="w-[40px] sm:w-[60px] h-[1px] bg-current"
+                className="w-10 sm:w-[60px] h-[1px] bg-current"
                 animate={{
                   scaleX: [1, 0.5, 1],
                   opacity: [1, 0.5, 1],
