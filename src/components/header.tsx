@@ -1,4 +1,5 @@
-import { Code2 } from "lucide-react";
+import { useState } from "react";
+import { Code2, Menu, X } from "lucide-react";
 import { scrollToElement } from "../utils/scrollToElement";
 import { useLanguage } from "../contexts/LanguageContext";
 import type { Language } from "../i18n/translations";
@@ -12,6 +13,7 @@ import {
 
 export function Header() {
   const { language, setLanguage, t } = useLanguage();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
     { label: t.header.nav.home, href: "#home" },
@@ -27,6 +29,11 @@ export function Header() {
   ];
 
   const currentLanguage = languages.find((lang) => lang.code === language);
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    scrollToElement(e);
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 py-4 md:py-6 z-[1000] backdrop-blur-sm bg-zinc-900/80 border-b border-zinc-800/50">
@@ -54,7 +61,6 @@ export function Header() {
               })}
             </nav>
 
-            {/* Language Selector */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button
@@ -92,8 +98,37 @@ export function Header() {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
+
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden p-2 text-zinc-300 hover:text-white transition-colors"
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
           </div>
         </div>
+
+        {isMenuOpen && (
+          <nav className="md:hidden mt-4 pb-2 border-t border-zinc-800/50 pt-4">
+            <div className="flex flex-col gap-3">
+              {navItems.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.href}
+                  onClick={handleNavClick}
+                  className="text-sm font-medium text-zinc-300 hover:text-blue-400 transition-colors py-2 px-1"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
+          </nav>
+        )}
       </div>
     </header>
   );

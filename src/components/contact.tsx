@@ -94,7 +94,6 @@ export function Contact() {
       className="relative py-16 md:py-24 lg:py-32 px-4 md:px-6 lg:px-8 bg-zinc-900"
     >
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -112,9 +111,7 @@ export function Contact() {
           </p>
         </motion.div>
 
-        {/* Content */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-16 lg:gap-20">
-          {/* Left - Contact Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -122,7 +119,6 @@ export function Contact() {
             viewport={{ once: true }}
             className="lg:col-span-1 space-y-8 md:space-y-10 lg:space-y-12"
           >
-            {/* Email */}
             <div>
               <p className="text-xs font-mono tracking-[0.2em] text-[#f7f7f7]/40 mb-3 md:mb-4 uppercase">
                 Email
@@ -145,7 +141,6 @@ export function Contact() {
               </motion.a>
             </div>
 
-            {/* Social */}
             <div>
               <p className="text-xs font-mono tracking-[0.2em] text-[#f7f7f7]/40 mb-6 uppercase">
                 Social
@@ -172,7 +167,6 @@ export function Contact() {
             </div>
           </motion.div>
 
-          {/* Right - Form */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -184,7 +178,6 @@ export function Contact() {
               onSubmit={handleSubmit(onSubmit)}
               className="space-y-6 md:space-y-8"
             >
-              {/* Nome e Email */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
@@ -251,7 +244,6 @@ export function Contact() {
                 </motion.div>
               </div>
 
-              {/* Mensagem */}
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -283,7 +275,6 @@ export function Contact() {
                 )}
               </motion.div>
 
-              {/* Submit */}
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}

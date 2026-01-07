@@ -189,7 +189,6 @@ export function Projects() {
       className="relative py-16 md:py-24 lg:py-32 px-4 md:px-6 lg:px-8 bg-zinc-900"
     >
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -213,7 +212,6 @@ export function Projects() {
           </div>
         </motion.div>
 
-        {/* Projects Grid - 3 columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7 lg:gap-8">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} index={index} />
