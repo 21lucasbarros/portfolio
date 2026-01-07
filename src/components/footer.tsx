@@ -42,8 +42,8 @@ export function Footer() {
     <footer className="relative bg-zinc-900 border-t border-white/10 px-4 md:px-6 lg:px-8 pt-12 md:pt-16 lg:pt-20 pb-6 md:pb-8 mt-16 md:mt-24 lg:mt-32 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-t from-white/[0.02] to-transparent pointer-events-none" />
       <div className="relative max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 mb-10 md:mb-12 lg:mb-16">
-          <section className="md:col-span-5 flex flex-col gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-8 mb-10 md:mb-12 lg:mb-16">
+          <section className="col-span-2 md:col-span-5 flex flex-col gap-4 md:gap-6">
             <div className="flex items-center gap-2 md:gap-3">
               <Code2 className="w-7 h-7 md:w-8 md:h-8 text-white" />
               <span className="text-lg md:text-xl font-bold text-white tracking-tight">
@@ -55,7 +55,7 @@ export function Footer() {
             </p>
           </section>
 
-          <nav className="md:col-span-3">
+          <nav className="col-span-1 md:col-span-3">
             <h3 className="font-mono text-xs font-semibold text-white/40 tracking-wider mb-4 md:mb-5 lg:mb-6 uppercase">
               {t.footer.navigation}
             </h3>
@@ -75,11 +75,11 @@ export function Footer() {
             </ul>
           </nav>
 
-          <section className="md:col-span-4">
+          <section className="col-span-1 md:col-span-4 text-right md:text-left">
             <h3 className="font-mono text-xs font-semibold text-white/40 tracking-wider mb-4 md:mb-5 lg:mb-6 uppercase">
               {t.footer.connect}
             </h3>
-            <ul className="flex flex-col gap-2.5 md:gap-3">
+            <ul className="flex flex-col gap-2.5 md:gap-3 items-end md:items-start">
               {socialLinks.map((social) => {
                 const Icon = social.icon;
                 return (
@@ -88,7 +88,7 @@ export function Footer() {
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group font-mono text-sm text-white/70 hover:text-white transition-all duration-300 flex items-center gap-3"
+                      className="group font-mono text-sm text-white/70 hover:text-white transition-all duration-300 flex items-center gap-3 flex-row-reverse md:flex-row"
                     >
                       <div className="w-8 h-8 rounded-md bg-white/5 flex items-center justify-center border border-white/10 group-hover:bg-white/10 group-hover:border-white/20 transition-all duration-300">
                         <Icon className="w-4 h-4" />
